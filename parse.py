@@ -15,6 +15,7 @@ def chart_parse():
     title = []
     artist = []
     music = {}
+
     for t in Music_title:
         t = re.sub('<.+?>', '', str(t), 0, re.I|re.S)
         t = t.replace("&amp;","&")
